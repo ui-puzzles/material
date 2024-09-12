@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@ui-puzzles/flow": "workspace:^",
     "@ui-puzzles/ui": "workspace:^",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -44,8 +45,5 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "resolutions": {
-    "eslint": "9.10.0"
   }
 }
