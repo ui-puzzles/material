@@ -1,0 +1,65 @@
+.board {
+  display: flex;
+  min-width: 30rem;
+  margin: 0 auto;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.buttons {
+  position: absolute;
+  top: 0.125rem;
+  right: 0.125rem;
+  background: none;
+  display: flex;
+  gap: 0.125rem;
+}
+
+.buttons button {
+  padding: 0.125rem;
+  background: none;
+  display: flex;
+}
+
+.buttons button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 2px #f6f7f6;
+  padding: 1.25rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-top: 10px solid #f6f7f6;
+  width: 10rem;
+  position: relative;
+
+  transition: all;
+  transition-duration: 200ms;
+}
+
+/* make the card slightly pop and highlight in red when the button is navigated via keyboard  */
+.card:has([data-action="delete"]:focus-visible) {
+  border-top: 10px solid #f7bccb;
+  box-shadow: 0 0 0 2px #f7bccb;
+  transform: scale(1.02);
+}
+
+.card:has([data-action="open"]:focus-visible) {
+  transform: scale(1.02);
+  border-top: 10px solid #c3dccf;
+  box-shadow: 0 0 0 2px #c3dccf;
+}
+
+.card:has([data-action="open"]:focus-visible) ~ .card,
+.card:has([data-action="delete"]:focus-visible) ~ .card,
+.card:has(~ .card [data-action="open"]:focus-visible),
+.card:has(~ .card [data-action="delete"]:focus-visible) {
+  filter: grayscale();
+  background-color: #f6f7f6;
+}

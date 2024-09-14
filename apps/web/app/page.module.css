@@ -6,15 +6,50 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
+  /* display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-synthesis: none;
+  font-synthesis: none; */
 }
+
+.card:has([data-action='delete']:focus-visible) {
+  border-top: 10px solid #f7bccb;
+  box-shadow: 0 0 0 2px #f7bccb;
+  transform: scale(1.02);
+}
+
+.card:has([data-action='open']:focus-visible) {
+  transform: scale(1.02);
+  border-top: 10px solid #c3dccf;
+  box-shadow: 0 0 0 2px #c3dccf;
+}
+
+
+.card:has([data-action='open']:focus-visible) ~ .card,
+.card:has([data-action='delete']:focus-visible) ~ .card,
+.card:has(~ .card [data-action='open']:focus-visible),
+.card:has(~ .card [data-action='delete']:focus-visible) {
+  filter: greyscale();
+  background-color: #f6f7f6;
+}
+
+/* .card {
+  width: 100%;
+  height: 200px;
+  border-top: 10px solid #666;
+}
+
+.card:has(img) {
+  border-top: 10px solid #fee6ec;
+}
+
+.card:has(+ img) {
+  border-top: 10px solid #c4f4ff;
+} */
 
 @media (prefers-color-scheme: dark) {
   .page {
