@@ -1,3 +1,5 @@
+import { type Node } from '@xyflow/react';
+
 import { BlueNode } from './BlueNode';
 import { RedNode } from './RedNode';
 
@@ -11,3 +13,18 @@ export const AVAILABLE_NODES = {
 };
 
 export type AvailableNodeTypes = keyof typeof AVAILABLE_NODES;
+
+// Define the base node structure
+export type BaseNode = Node<Record<string, unknown>, AvailableNodeTypes>;
+
+export type CustomNode = {
+  [K in AvailableNodeTypes]: BaseNode & {
+    type: K;
+    data: NodeDataTypes[K];
+  };
+}[AvailableNodeTypes];
+
+export interface NodeDataTypes {
+  red: unknown;
+  blue: unknown;
+}
