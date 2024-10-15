@@ -1,0 +1,452 @@
+{
+  "toolbar": {
+    "comingSoon": "即将推出",
+    "viewFilterInShare": "此视图正在被用于视图分享链接。修改视图配置也会改变视图分享链接。",
+    "createFieldButtonText": "创建一个<0/>类型的字段",
+    "others": {
+      "share": {
+        "label": "分享",
+        "statusLabel": "分享视图",
+        "noPermission": "无权限分享视图",
+        "shareLink": "分享链接",
+        "copied": "已复制",
+        "genLink": "生成新链接",
+        "allowCopy": "允许拷贝视图数据",
+        "showAllFields": "显示展开记录中的所有字段",
+        "restrict": "设置访问密码",
+        "tips": "开启后将获取一个链接，此链接仅允许访问当前视图。",
+        "passwordTitle": "设置访问密码",
+        "passwordTips": "链接仅在正确密码输入后可访问",
+        "embed": "嵌入",
+        "embedPreview": "嵌入预览",
+        "hideToolbar": "隐藏工具栏",
+        "URLSetting": "链接参数设置",
+        "URLSettingDescription": "通过链接参数来控制显示样式，调整以下设置不会影响已分享出去的链接，您需要复制带上新参数的链接以使其生效",
+        "cancel": "取消",
+        "save": "保存"
+      },
+      "extensions": {
+        "label": "插件",
+        "graph": "关系图"
+      },
+      "api": {
+        "label": "API 接口",
+        "restfulApi": "Restful API",
+        "databaseConnection": "数据库连接"
+      }
+    }
+  },
+  "welcome": {
+    "title": "开始",
+    "description": "点击左侧 + 号创建或者导入表格。",
+    "help": "访问 <HelpCenter /> 获取更多信息。",
+    "helpCenter": "帮助中心"
+  },
+  "field": {
+    "fieldManagement": "字段管理",
+    "fieldManagementDesc": "当前表格所有字段的详细信息",
+    "advancedProps": "高级属性",
+    "hide": "隐藏",
+    "default": {
+      "singleLineText": {
+        "title": "标题"
+      },
+      "longText": {
+        "title": "描述"
+      },
+      "number": {
+        "title": "计数",
+        "formatType": "格式类型",
+        "currencySymbol": "货币符号",
+        "defaultSymbol": "￥",
+        "precision": "精度",
+        "decimalExample": "小数 (1.23)",
+        "currencyExample": "货币 (￥100)",
+        "percentExample": "百分比 (20%)"
+      },
+
+      "singleSelect": {
+        "title": "状态",
+        "options": {
+          "todo": "待开始",
+          "inProgress": "进行中",
+          "done": "已完成"
+        }
+      },
+      "multipleSelect": {
+        "title": "标签"
+      },
+      "attachment": {
+        "title": "附件"
+      },
+      "user": {
+        "title": "成员"
+      },
+      "date": {
+        "title": "日期",
+        "dateFormatting": "日期格式",
+        "timeFormatting": "时间格式",
+        "timeZone": "时区",
+        "yearMonth": "年/月",
+        "monthDay": "月/日",
+        "year": "年",
+        "month": "月",
+        "day": "日",
+        "local": "本地",
+        "friendly": "语义化",
+        "us": "美国",
+        "european": "欧洲",
+        "asia": "亚洲",
+        "custom": "自定义",
+        "12Hour": "12 时",
+        "24Hour": "24 时",
+        "noDisplay": "不显示"
+      },
+      "autoNumber": {
+        "title": "自动编号"
+      },
+      "createdTime": {
+        "title": "创建时间"
+      },
+      "lastModifiedTime": {
+        "title": "修改时间"
+      },
+      "createdBy": {
+        "title": "创建人"
+      },
+      "lastModifiedBy": {
+        "title": "修改人"
+      },
+      "rating": {
+        "title": "评分"
+      },
+      "checkbox": {
+        "title": "勾选"
+      },
+      "formula": {
+        "title": "计算",
+        "formula": "公式"
+      },
+      "lookup": {
+        "title": "从{{linkFieldName}}查找{{lookupFieldName}}"
+      },
+      "rollup": {
+        "title": "{{linkFieldName}}的{{lookupFieldName}}汇总",
+        "rollup": "汇总",
+        "selectAnRollupFunction": "选择一个汇总函数",
+        "func": {
+          "count": "数值计数",
+          "countA": "非空计数",
+          "countAll": "全计数",
+          "max": "最大值",
+          "min": "最小值",
+          "sum": "求和",
+          "concatenate": "连接",
+          "arrayJoin": "数组连接",
+          "arrayUnique": "数组去重",
+          "arrayCompact": "数组去空",
+          "and": "与",
+          "or": "或",
+          "xor": "异或"
+        },
+        "funcDesc": {
+          "count": "计算所有数字类型值的数量",
+          "countA": "计算所有非空值的数量",
+          "countAll": "计算所有值的数量",
+          "max": "计算所有值的最大值",
+          "min": "计算所有值的最小值",
+          "sum": "计算所有值的和",
+          "concatenate": "将所有值连接为一个字符串",
+          "arrayJoin": "将所有值连接为一个逗号分隔的字符串",
+          "arrayUnique": "去除数组中的重复值",
+          "arrayCompact": "去除数组中的空值",
+          "and": "如果所有值都为真，则返回真",
+          "or": "如果有一个值为真，则返回真",
+          "xor": "如果奇数个值为真，则返回真"
+        }
+      }
+    },
+    "editor": {
+      "addField": "添加字段",
+      "editField": "编辑字段",
+      "insertField": "插入字段",
+      "graph": "关系图",
+      "defaultValue": "默认值",
+      "reset": "清空",
+      "fieldUpdated": "字段已更新",
+      "fieldCreated": "字段已创建",
+      "previewDependenciesGraph": "预览依赖关系图",
+      "areYouSurePerformIt": "确定要执行此操作吗？",
+      "addDescription": "添加描述",
+      "description": "描述",
+      "descriptionPlaceholder": "描述这个字段（可选）",
+      "type": "字段类型",
+      "showAs": "显示样式",
+      "color": "颜色",
+      "number": "数字",
+      "chartBar": "条形图",
+      "chartLine": "折线图",
+      "ring": "环形",
+      "bar": "条形",
+      "text": "文本",
+      "url": "网址",
+      "email": "邮件",
+      "phone": "电话",
+      "maxNumber": "最大值",
+      "showNumber": "显示数值",
+      "autoFillDate": "自动填充当前日期",
+      "createSymmetricLink": "双向关联",
+      "allowLinkMultipleRecords": "允许多选",
+      "allowLinkToDuplicateRecords": "允许重复值",
+      "allowSymmetricFieldLinkMultipleRecords": "允许重复值",
+      "oneToOne": "一对一",
+      "oneToMany": "一对多",
+      "manyToOne": "多对一",
+      "manyToMany": "多对多",
+      "self": "本表",
+      "selectTable": "选择一张表...",
+      "selectBase": "选择一个数据库...",
+      "linkFromExternalBase": "从其他数据库关联",
+      "inSelfLink": "自关联",
+      "betweenTwoTables": "关联",
+      "linkTipMessage": "提示：此配置表示<b>{{relationship}}</b>的<span>{{linkType}}</span>关系 ",
+      "style": "样式",
+      "maximum": "最大值",
+      "addOption": "添加选项",
+      "allowMultiUsers": "允许添加多个用户",
+      "notifyUsers": "用户被选择后发送通知",
+      "searchTable": "搜索表...",
+      "calculating": "计算中...",
+      "doSaveChanges": "您要保存所做的更改吗？",
+      "linkFieldToLookup": "用于查找的已链接记录字段",
+      "lookupToTable": "从{{tableName}}表中选择要进行查找的字段",
+      "selectField": "选择一个字段...",
+      "linkTable": "进行关联的表",
+      "linkBase": "进行关联的数据库",
+      "tableNoPermission": "无权限表格",
+      "baseNoPermission": "无权限数据库",
+      "noLinkTip": "没有可查找的关联字段。请先创建关联字段，然后再次尝试配置查找。",
+      "fieldValidationRules": "字段值验证规则",
+      "enableValidateFieldUnique": "唯一值校验",
+      "enableValidateFieldNotNull": "非空值校验",
+      "knowMore": "了解更多",
+      "linkFieldKnowMoreLink": "https://help.teable.cn/ji-ben-gong-neng/zi-duan/gao-ji-zi-duan/guan-lian"
+    },
+    "subTitle": {
+      "link": "在表之间创建关联关系",
+      "singleLineText": "可输入单行文本，或为每个新单元格预填充一个默认值。",
+      "longText": "输入多行文本，允许进行换行。",
+      "attachment": "添加图片、文档或其他文件以供查看或下载。",
+      "checkbox": "勾选或取消勾选以表示状态。",
+      "multipleSelect": "在列表中选择一个或多个预定义选项。",
+      "singleSelect": "从列表中选择一个预定义选项，或为每个新单元格预填充一个默认选项。",
+      "user": "向记录中添加用户。",
+      "date": "输入日期（例如 2023/11/12）或从日历中选择。",
+      "number": "输入数字，或为每个新单元格预填充一个默认值。",
+      "duration": "以小时、分钟或秒为单位输入时间长度（例如 1:23）。",
+      "rating": "在预定分值上添加评分。",
+      "formula": "基于字段进行动态公式计算。",
+      "rollup": "汇总来自关联记录的数据。",
+      "count": "计算关联记录的数量。",
+      "createdTime": "查看每条记录创建的日期和时间。",
+      "lastModifiedTime": "查看每条记录的最近编辑日期和时间。",
+      "createdBy": "查看创建记录的用户。",
+      "lastModifiedBy": "查看每条记录的最近编辑的用户。",
+      "autoNumber": "为每条记录自动生成唯一的递增数字。",
+      "button": "触发自定义操作。",
+      "lookup": "通过绑定一个关联字段，从关联表中查找已关联记录的信息。"
+    },
+    "fieldName": "字段名",
+    "fieldNameOptional": "字段名 (可选)",
+    "fieldType": "字段类型"
+  },
+  "table": {
+    "newTableLabel": "表格",
+    "rename": "重命名",
+    "design": "设计",
+    "tableRecordHistory": "表格记录历史",
+    "deleteConfirm": "你确定要删除 \"{{tableName}}\" 表吗？",
+    "dbTableName": "物理数据库中的表名",
+    "schemaName": "物理数据库中的模式(Schema)名",
+    "tableInfo": "表信息",
+    "tableInfoDetail": "当前表的基础属性",
+    "typeOfDatabase": "数据库类型",
+    "descriptionForTable": "表的描述",
+    "nameForTable": "表的名称",
+    "deleteTip1": "其他表中关联了此表的关联字段将会被删除。",
+    "deleteTip2": "此表被删除后可在回收站中进行恢复。",
+    "operator": {
+      "createBlank": "创建一个新表格"
+    },
+    "actionTips": {
+      "copyAndPasteEnvironment": "复制和粘贴功能仅在 HTTPS 或 localhost 环境下可用",
+      "copyAndPasteBrowser": "当前浏览器不支持复制和粘贴功能",
+      "copying": "正在复制...",
+      "copySuccessful": "复制成功",
+      "copyFailed": "复制失败",
+      "pasting": "正在粘贴...",
+      "pasteSuccessful": "粘贴成功",
+      "pasteFailed": "粘贴失败",
+      "clearing": "正在清除...",
+      "clearSuccessful": "清除成功",
+      "deleting": "正在删除...",
+      "deleteSuccessful": "删除成功",
+      "pasteFileFailed": "文件只能粘贴到附件字段中"
+    },
+    "graph": {
+      "tableLabel": "表格名称",
+      "effectCells": "影响单元格数",
+      "estimatedTime": "预计完成"
+    }
+  },
+  "import": {
+    "title": {
+      "upload": "上传",
+      "import": "导入",
+      "localFile": "本地文件",
+      "linkUrl": "在线链接(URL)",
+      "linkUrlInputTitle": "从URl下载文件",
+      "importTitle": "创建一个新表格",
+      "incrementImportTitle": "导入到 — ",
+      "optionsTitle": "导入选项",
+      "primitiveFields": "原表字段",
+      "importFields": "导入的字段",
+      "primaryField": "主键",
+      "tipsTitle": "温馨提示",
+      "confirm": "确认并继续"
+    },
+    "menu": {
+      "addFromOtherSource": "从第三方资源导入",
+      "excelFile": "Microsoft Excel",
+      "csvFile": "Csv 文件",
+      "cancel": "取消",
+      "leave": "取消",
+      "downAsCsv": "下载 CSV",
+      "importData": "导入数据"
+    },
+    "tips": {
+      "importWayTip": "点击或者拖拽到此区域上传",
+      "leaveTip": "你的数据仍然会被导入",
+      "fileExceedSizeTip": "该类型文件限制文件大小为",
+      "analyzing": "分析中",
+      "importing": "导入中",
+      "notSupportFieldType": "字段类型不支持",
+      "resultEmpty": "未查询到结果",
+      "searchPlaceholder": "搜索...",
+      "importAlert": "一旦导入，不能中止，直到导入成功或失败中止，表格右上角会显示导入状态，导入结果将会在推送到通知栏。导入期间，最好不要编辑字段，可能会引起错误。",
+      "noTips": "我已知晓，不再提示"
+    },
+    "options": {
+      "autoSelectFieldOptionName": "自动预测类型",
+      "useFirstRowAsHeaderOptionName": "使用第一行作为行头",
+      "importDataOptionName": "导入数据",
+      "sheetKey": "表名：",
+      "excludeFirstRow": "忽略首行"
+    },
+    "form": {
+      "defaultFieldName": "字段",
+      "error": {
+        "urlEmptyTip": "URL不能为空！",
+        "fieldNameEmpty": "字段名不能为空",
+        "errorFileFormat": "文件格式错误！",
+        "uniqueFieldName": "字段名不能重复！",
+        "urlValidateTip": "不能解析该URL，请重新输入！",
+        "atLeastAImportField": "请至少设置一个导入字段！"
+      },
+      "option": {
+        "doNotImport": "无需导入"
+      }
+    }
+  },
+  "export": {
+    "menu": {
+      "exportCsv": "下载 Csv文件"
+    }
+  },
+  "grid": {
+    "prefillingRowTitle": "新建记录",
+    "prefillingRowTooltip": "请在下方输入新记录的数据。当焦点离开当前行后，数据将自动保存。"
+  },
+  "form": {
+    "fieldsManagement": "字段管理",
+    "addAll": "全部添加",
+    "removeAll": "全部移除",
+    "hideFieldTip": "拖拽到这里移除表单中的字段",
+    "unableAddFieldTip": "不支持添加该字段类型",
+    "removeFromFormTip": "从表单中移除该字段",
+    "descriptionPlaceholder": "请输入表单描述",
+    "dragToFormTip": "拖拽字段到这里添加至表单"
+  },
+  "kanban": {
+    "toolbar": {
+      "hideFieldName": "隐藏字段名",
+      "customizeCards": "卡片配置",
+      "stackedBy": "分组依据 <0/>",
+      "chooseStackingField": "选择分组依据",
+      "chooseStackingFieldDescription": "您希望使用哪个单选或用户字段来设置看板？您的记录将根据这个字段来进行分组。",
+      "hideEmptyStack": "隐藏空的分组",
+      "imageSetting": "封面设置",
+      "fit": "适应",
+      "noImage": "无封面",
+      "chooseAttachmentField": "请选择一个附件字段"
+    },
+    "stack": {
+      "addStack": "添加分组",
+      "noCards": "暂无卡片",
+      "uncategorized": "未分类"
+    },
+    "stackMenu": {
+      "collapseStack": "折叠分组",
+      "renameStack": "重命名分组",
+      "deleteStack": "删除分组"
+    },
+    "cardMenu": {
+      "insertCardAbove": "在上方插入卡片",
+      "insertCardBelow": "在下方插入卡片",
+      "expandCard": "展开卡片",
+      "deleteCard": "删除卡片"
+    }
+  },
+  "menu": {
+    "insertRecordAbove": "在上方插入记录",
+    "insertRecordBelow": "在下方插入记录",
+    "copyCells": "复制单元格",
+    "deleteRecord": "删除记录",
+    "deleteAllSelectedRecords": "删除所有选定的记录",
+    "editField": "编辑字段",
+    "insertFieldLeft": "在左侧插入字段",
+    "insertFieldRight": "在右侧插入字段",
+    "freezeUpField": "冻结至此字段",
+    "hideField": "隐藏字段",
+    "deleteField": "删除字段",
+    "deleteAllSelectedFields": "删除所有选定的字段"
+  },
+  "connection": {
+    "title": "数据库连接",
+    "description": "你可以通过数据库连接来直接访问数据库",
+    "noPermission": "你没有权限访问数据库连接",
+    "connectionCountTip": "最大数据库连接数为 <b>{{max}}</b> 当前已建立的连接数为 <b>{{current}}</b>",
+    "helpLink": "https://help.teable.cn/gao-dai-ma-kai-fa/shu-ju-ku-lian-jie"
+  },
+  "view": {
+    "addRecord": "添加记录",
+    "searchView": "搜索视图...",
+    "dragToolTip": "自动排序已经打开，无法进行手动拖拽排序",
+    "insertToolTip": "自动排序已经打开，无法指定插入位置",
+    "action": {
+      "rename": "重命名",
+      "delete": "删除视图"
+    },
+    "category": {
+      "table": "表格视图",
+      "form": "表单视图",
+      "kanban": "看板视图"
+    },
+    "crash": {
+      "title": "页面崩溃!",
+      "description": "当前页面意外崩溃，请刷新重试，如果持续出现问题请咨询 support@teable.io 获取帮助"
+    }
+  },
+  "lastModifiedTime": "修改时间",
+  "lastModify": "上次修改："
+}

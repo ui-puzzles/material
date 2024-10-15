@@ -1,0 +1,714 @@
+{
+  "common": {
+    "comingSoon": "即将推出",
+    "empty": "空",
+    "noRecords": "没有可用记录",
+    "unnamedRecord": "未命名记录",
+    "untitled": "无标题",
+    "cancel": "取消",
+    "confirm": "确认",
+    "back": "返回",
+    "done": "完成",
+    "create": "创建",
+    "search": {
+      "placeholder": "搜索...",
+      "empty": "未找到结果"
+    },
+    "selectPlaceHolder": "请选择...",
+    "loading": "加载中...",
+    "loadMore": "加载更多",
+    "uploadFailed": "上传失败",
+    "rowCount": "{{count}}条记录",
+    "summary": "统计",
+    "summaryTip": "点击此行进行统计",
+    "actions": "操作"
+  },
+  "noun": {
+    "table": "表格",
+    "view": "视图",
+    "space": "空间",
+    "base": "数据库",
+    "field": "字段",
+    "record": "记录",
+    "automation": "自动化",
+    "user": "用户",
+    "recordHistory": "记录历史",
+    "you": "你"
+  },
+  "undoRedo": {
+    "undo": "撤销",
+    "redo": "重做",
+    "undoFailed": "撤销失败",
+    "redoFailed": "重做失败",
+    "nothingToUndo": "无可撤销操作",
+    "nothingToRedo": "无可重做操作",
+    "undoSucceed": "撤销成功",
+    "redoSucceed": "重做成功",
+    "undoing": "撤销中...",
+    "redoing": "重做中..."
+  },
+  "editor": {
+    "attachment": {
+      "uploadDragOver": "释放以上传文件",
+      "uploadDragDefault": "粘贴或拖放文件到此处上传"
+    },
+    "date": {
+      "placeholder": "选择日期",
+      "today": "今天"
+    },
+    "formula": {
+      "title": "公式编辑器",
+      "guideSyntax": "语法",
+      "guideExample": "示例",
+      "helperExample": "示例：",
+      "fieldValue": "返回 {{fieldName}} 字段的值."
+    },
+    "link": {
+      "placeholder": "选择要链接的记录",
+      "searchPlaceholder": "搜索记录",
+      "create": "添加记录",
+      "selectRecord": "选择记录",
+      "unselected": "未选择",
+      "selected": "已选择",
+      "expandRecordError": "无权查看此记录"
+    },
+    "user": {
+      "searchPlaceholder": "通过姓名查找用户",
+      "notify": "通知被选择的用户"
+    },
+    "select": {
+      "addOption": "添加选项 '{{option}}'"
+    }
+  },
+  "filter": {
+    "label": "筛选",
+    "displayLabel": "筛选字段 ",
+    "displayLabel_other": "筛选({{count}})",
+    "addCondition": "添加条件",
+    "addConditionGroup": "添加条件组",
+    "nestedLimitTip": "条件组最多支持{{depth}}层嵌套",
+    "linkInputPlaceholder": "输入值",
+    "groupDescription": "以下任一条件为真…",
+    "currentUser": "我（当前用户）",
+    "tips": {
+      "scope": "仅作用于当前视图的记录"
+    },
+    "invalidateSelected": "已删除选项",
+    "invalidateSelectedTips": "该选项已被删除，请重新选择",
+    "default": {
+      "empty": "当前没有应用任何筛选条件",
+      "placeholder": "请输入"
+    },
+    "conjunction": {
+      "and": "且",
+      "or": "或",
+      "where": "当"
+    },
+    "operator": {
+      "is": "等于",
+      "isNot": "不等于",
+      "contains": "包含",
+      "doesNotContain": "不包含",
+      "isEmpty": "为空",
+      "isNotEmpty": "不为空",
+      "isGreater": "大于",
+      "isGreaterEqual": "大于等于",
+      "isLess": "小于",
+      "isLessEqual": "小于等于",
+      "isAnyOf": "属于",
+      "isNoneOf": "不属于",
+      "hasAnyOf": "包含任意一个",
+      "hasAllOf": "包含所有",
+      "hasNoneOf": "不包含",
+      "isExactly": "等于",
+      "isWithIn": "在...之内",
+      "isBefore": "早于",
+      "isAfter": "晚于",
+      "isOnOrBefore": "早于或等于",
+      "isOnOrAfter": "晚于或等于",
+      "number": {
+        "is": "=",
+        "isNot": "≠",
+        "isGreater": ">",
+        "isGreaterEqual": "≥",
+        "isLess": "<",
+        "isLessEqual": "≤"
+      }
+    },
+    "component": {
+      "date": {
+        "today": "今天",
+        "tomorrow": "明天",
+        "yesterday": "昨天",
+        "oneWeekAgo": "一周前",
+        "oneWeekFromNow": "一周后",
+        "oneMonthAgo": "一个月前",
+        "oneMonthFromNow": "一个月后",
+        "daysAgo": "几天前",
+        "daysFromNow": "几天后",
+        "exactDate": "具体日期",
+
+        "pastWeek": "过去一周",
+        "pastMonth": "过去一个月",
+        "pastYear": "过去一年",
+        "nextWeek": "下周",
+        "nextMonth": "下个月",
+        "nextYear": "明年",
+        "pastNumberOfDays": "过去几天",
+        "nextNumberOfDays": "接下来几天"
+      }
+    }
+  },
+  "color": {
+    "label": "颜色"
+  },
+  "rowHeight": {
+    "short": "低",
+    "medium": "中等",
+    "tall": "高",
+    "extraTall": "超高"
+  },
+  "share": {
+    "title": "分享"
+  },
+  "extensions": {
+    "title": "插件"
+  },
+  "hidden": {
+    "label": "字段配置",
+    "configLabel_one": "字段配置({{count}} 隐藏)",
+    "configLabel_other": "字段配置({{count}} 隐藏)",
+    "showAll": "显示全部",
+    "hideAll": "隐藏全部",
+    "primaryKey": "主字段：用于标识记录，不可隐藏或删除\n其值会在关联记录中显示"
+  },
+  "expandRecord": {
+    "copy": "复制到剪贴板",
+    "copyRecordUrl": "复制记录链接",
+    "deleteRecord": "删除记录",
+    "recordHistory": {
+      "hiddenRecordHistory": "隐藏记录历史",
+      "showRecordHistory": "显示记录历史",
+      "createdTime": "操作时间",
+      "createdBy": "操作人",
+      "before": "变更前",
+      "after": "变更后",
+      "viewRecord": "查看记录"
+    }
+  },
+  "sort": {
+    "label": "排序",
+    "displayLabel_one": "排序({{count}})",
+    "displayLabel_other": "排序({{count}})",
+    "setTips": "设置排序条件",
+    "addButton": "添加另一个排序",
+    "autoSort": "自动排序",
+    "selectASCLabel": "选项顺序",
+    "selectDESCLabel": "选项倒序"
+  },
+  "group": {
+    "label": "分组",
+    "displayLabel_one": "分组({{count}})",
+    "displayLabel_other": "分组({{count}})",
+    "setTips": "分组方式",
+    "addButton": "添加另一个分组"
+  },
+  "field": {
+    "title": {
+      "singleLineText": "单行文本",
+      "longText": "长文本",
+      "singleSelect": "单选",
+      "number": "数字",
+      "multipleSelect": "多选",
+      "link": "关联",
+      "formula": "公式",
+      "date": "日期",
+      "createdTime": "创建时间",
+      "lastModifiedTime": "最近修改时间",
+      "attachment": "附件",
+      "checkbox": "勾选",
+      "rollup": "汇总",
+      "user": "用户",
+      "rating": "评分",
+      "autoNumber": "自增数字",
+      "lookup": "从关联的表中查找",
+      "button": "按钮",
+      "createdBy": "创建人",
+      "lastModifiedBy": "最近修改人"
+    }
+  },
+  "permission": {
+    "actionDescription": {
+      "spaceCreate": "创建空间",
+      "spaceDelete": "删除空间",
+      "spaceRead": "查看空间",
+      "spaceUpdate": "更新空间",
+      "spaceInviteEmail": "通过电子邮件邀请进入空间",
+      "spaceInviteLink": "通过链接邀请进入空间",
+      "spaceGrantRole": "在空间中授予角色",
+      "baseCreate": "创建数据库",
+      "baseDelete": "删除数据库",
+      "baseRead": "查看数据库",
+      "baseUpdate": "更新数据库",
+      "baseInviteEmail": "通过电子邮件邀请进入数据库",
+      "baseInviteLink": "通过链接邀请进入数据库",
+      "baseTableImport": "导入到数据库",
+      "baseTableExport": "导出数据库",
+      "baseAuthorityMatrixConfig": "配置权限矩阵",
+      "baseDbConnect": "连接数据库",
+      "tableCreate": "创建表格",
+      "tableRead": "查看表格",
+      "tableDelete": "删除表格",
+      "tableUpdate": "更新表格",
+      "tableImport": "导入数据到表格",
+      "tableExport": "导出表格数据",
+      "viewCreate": "创建视图",
+      "viewDelete": "删除视图",
+      "viewRead": "查看视图",
+      "viewUpdate": "更新视图",
+      "viewShare": "分享视图",
+      "fieldCreate": "创建字段",
+      "fieldDelete": "删除字段",
+      "fieldRead": "查看字段",
+      "fieldUpdate": "更新字段",
+      "recordCreate": "创建记录",
+      "recordComment": "对记录进行评论",
+      "recordDelete": "删除记录",
+      "recordRead": "查看记录",
+      "recordUpdate": "更新记录",
+      "automationCreate": "创建自动化",
+      "automationDelete": "删除自动化",
+      "automationRead": "读取自动化",
+      "automationUpdate": "更新自动化",
+      "userEmailRead": "查看用户电子邮件",
+      "recordHistoryRead": "查看记录历史",
+      "baseQuery": "查询数据库"
+    }
+  },
+  "formula": {
+    "SUM": {
+      "summary": "将数字相加。等同于 number1 + number2 + ...",
+      "example": "SUM(100, 200, 300) => 600"
+    },
+    "AVERAGE": {
+      "summary": "返回数字的平均值。",
+      "example": "AVERAGE(100, 200, 300) => 200"
+    },
+    "MAX": {
+      "summary": "返回给定数字中的最大值。",
+      "example": "MAX(100, 200, 300) => 300"
+    },
+    "MIN": {
+      "summary": "返回给定数字中的最小值。",
+      "example": "MIN(100, 200, 300) => 100"
+    },
+    "ROUND": {
+      "summary": "将数值四舍五入到指定的小数位数。（具体来说，ROUND 会四舍五入到指定精度的最接近的整数，如果是 0.5，则向正无穷大方向舍入。）",
+      "example": "ROUND(1.99, 0) => 2\nROUND(16.8, -1) => 20"
+    },
+    "ROUNDUP": {
+      "summary": "将数值向上舍入到指定的小数位数，即远离零。（必须为精度指定一个值，否则函数将不起作用。）",
+      "example": "ROUNDUP(1.1, 0) => 2\nROUNDUP(-1.1, 0) => -2"
+    },
+    "ROUNDDOWN": {
+      "summary": "将数值向下舍入到指定的小数位数，即向零。（必须为精度指定一个值，否则函数将不起作用。）",
+      "example": "ROUNDDOWN(1.9, 0) => 1\nROUNDDOWN(-1.9, 0) => -1"
+    },
+    "CEILING": {
+      "summary": "返回大于或等于该值的最接近的 significance 的整数倍。如果未提供 significance，则假定为 1。",
+      "example": "CEILING(2.49) => 3\nCEILING(2.49, 1) => 2.5\nCEILING(2.49, -1) => 10"
+    },
+    "FLOOR": {
+      "summary": "返回小于或等于该值的最接近的 significance 的整数倍。如果未提供 significance，则假定为 1。",
+      "example": "FLOOR(2.49) => 2\nFLOOR(2.49, 1) => 2.4\nFLOOR(2.49, -1) => 0"
+    },
+    "EVEN": {
+      "summary": "返回大于或等于指定值的最小偶数。",
+      "example": "EVEN(0.1) => 2\nEVEN(-0.1) => -2"
+    },
+    "ODD": {
+      "summary": "将正值向上舍入到最接近的奇数，将负值向下舍入到最接近的奇数。",
+      "example": "ODD(0.1) => 1\nODD(-0.1) => -1"
+    },
+    "INT": {
+      "summary": "如果逻辑参数为真，则返回 number1，否则返回 number2。也可用于制作嵌套的 IF 语句。\n还可用于检查单元格是否为空/是否为空。",
+      "example": "INT(1.9) => 1\nINT(-1.9) => -2"
+    },
+    "ABS": {
+      "summary": "返回绝对值。",
+      "example": "ABS(-1) => 1"
+    },
+    "SQRT": {
+      "summary": "返回非负数的平方根。",
+      "example": "SQRT(4) => 2"
+    },
+    "POWER": {
+      "summary": "计算指定底数的指定幂。",
+      "example": "POWER(2) => 4"
+    },
+    "EXP": {
+      "summary": "计算欧拉数（e）的指定幂。",
+      "example": "EXP(0) => 1\nEXP(1) => 2.718"
+    },
+    "LOG": {
+      "summary": "计算指定底数的值的对数。如果未指定底数，则默认为 10。",
+      "example": "LOG(100) => 2\nLOG(1024, 2) => 10"
+    },
+    "MOD": {
+      "summary": "返回第一个参数除以第二个参数后的余数。",
+      "example": "MOD(9, 2) => 1\nMOD(9, 3) => 0"
+    },
+    "VALUE": {
+      "summary": "将文本字符串转换为数字。",
+      "example": "VALUE(\"$1,000,000\") => 1000000"
+    },
+    "CONCATENATE": {
+      "summary": "将各种类型的参数连接成单个文本值。",
+      "example": "CONCATENATE(\"Hello \", \"Teable\") => Hello Teable"
+    },
+    "FIND": {
+      "summary": "从可选的 startFromPosition 开始，在 whereToSearch 字符串中查找 stringToFind 的出现位置。（startFromPosition 默认为 0。）如果未找到 stringToFind，结果将为 0。",
+      "example": "FIND(\"Teable\", \"Hello Teable\") => 7\nFIND(\"Teable\", \"Hello Teable\", 5) => 7\nFIND(\"Teable\", \"Hello Teable\", 10) => 0"
+    },
+    "SEARCH": {
+      "summary": "从可选的 startFromPosition 开始，在 whereToSearch 字符串中搜索 stringToFind 的出现位置。（startFromPosition 默认为 0。）如果未找到 stringToFind，结果将为空。\n与 FIND() 类似，但如果未找到 stringToFind，FIND() 返回 0 而不是空。",
+      "example": "SEARCH(\"Teable\", \"Hello Teable\") => 7\nSEARCH(\"Teable\", \"Hello Teable\", 5) => 7\nSEARCH(\"Teable\", \"Hello Teable\", 10) => \"\""
+    },
+    "MID": {
+      "summary": "从 whereToStart 开始提取 count 个字符的子字符串。",
+      "example": "MID(\"Hello Teable\", 6, 6) => \"Teable\""
+    },
+    "LEFT": {
+      "summary": "从字符串开头提取 howMany 个字符。",
+      "example": "LEFT(\"2023-09-06\", 4) => \"2023\""
+    },
+    "RIGHT": {
+      "summary": "从字符串结尾提取 howMany 个字符。",
+      "example": "RIGHT(\"2023-09-06\", 5) => \"09-06\""
+    },
+    "REPLACE": {
+      "summary": "用替换文本替换从起始字符开始的指定数量的字符。\n（如果你想查找并替换所有出现的 old_text 为 new_text，请参见 SUBSTITUTE()。）",
+      "example": "REPLACE(\"Hello Table\", 7, 5, \"Teable\") => \"Hello Teable\""
+    },
+    "REGEXP_REPLACE": {
+      "summary": "用替换文本替换所有匹配正则表达式的子字符串。",
+      "example": "REGEXP_REPLACE(\"Hello Table\", \"H.* \", \"\") => \"Teable\""
+    },
+    "SUBSTITUTE": {
+      "summary": "替换 old_text 的出现为 new_text。\n你可以选择指定一个索引号（从 1 开始）来仅替换特定出现的 old_text。如果未指定索引号，则将替换所有出现的 old_text。",
+      "example": "SUBSTITUTE(\"Hello Table\", \"Table\", \"Teable\") => \"Hello Teable\""
+    },
+    "LOWER": {
+      "summary": "将字符串转换为小写。",
+      "example": "LOWER(\"Hello Teable\") => \"hello teable\""
+    },
+    "UPPER": {
+      "summary": "将字符串转换为大写。",
+      "example": "UPPER(\"Hello Teable\") => \"HELLO TEABLE\""
+    },
+    "REPT": {
+      "summary": "将字符串重复指定的次数。",
+      "example": "REPT(\"Hello!\") => \"Hello!Hello!Hello!\""
+    },
+    "TRIM": {
+      "summary": "删除字符串开头和结尾的空白字符。",
+      "example": "TRIM(\" Hello \") => \"Hello\""
+    },
+    "LEN": {
+      "summary": "返回字符串的长度。",
+      "example": "LEN(\"Hello\") => 5"
+    },
+    "T": {
+      "summary": "如果参数是文本则返回该参数，否则返回空白。",
+      "example": "T(\"Hello\") => \"Hello\"\nT(100) => null"
+    },
+    "ENCODE_URL_COMPONENT": {
+      "summary": "将某些字符替换为编码等效项，用于构造 URL 或 URI。不编码以下字符：- _ . ~",
+      "example": "ENCODE_URL_COMPONENT(\"Hello Teable\") => \"Hello%20Teable\""
+    },
+    "IF": {
+      "summary": "如果逻辑参数为真，则返回 value1，否则返回 value2。也可用于制作嵌套的 IF 语句。\n还可用于检查单元格是否为空/是否为空。",
+      "example": "IF(2 > 1, \"A\", \"B\") => \"A\"\nIF(2 > 1, TRUE, FALSE) => TRUE"
+    },
+    "SWITCH": {
+      "summary": "接受一个表达式、该表达式可能的值列表，以及对应每个值的结果。还可以接受一个默认值，如果表达式输入与任何定义的模式都不匹配，则返回该默认值。在许多情况下，SWITCH() 可以用来替代嵌套的 IF() 公式。",
+      "example": "SWITCH(\"B\", \"A\", \"Value A\", \"B\", \"Value B\", \"Default Value\") => \"Value B\""
+    },
+    "AND": {
+      "summary": "如果所有参数都为真，则返回真，否则返回假。",
+      "example": "AND(1 < 2, 5 > 3) => true\nAND(1 < 2, 5 < 3) => false"
+    },
+    "OR": {
+      "summary": "如果任何一个参数为真，则返回真。",
+      "example": "OR(1 < 2, 5 < 3) => true\nOR(1 > 2, 5 < 3) => false"
+    },
+    "XOR": {
+      "summary": "如果奇数个参数为真，则返回真。",
+      "example": "XOR(1 < 2, 5 < 3, 8 < 10) => false\nXOR(1 > 2, 5 < 3, 8 < 10) => true"
+    },
+    "NOT": {
+      "summary": "反转其参数的逻辑值。",
+      "example": "NOT(1 < 2) => false\nNOT(1 > 2) => true"
+    },
+    "BLANK": {
+      "summary": "返回空值。",
+      "example": "BLANK() => null\nIF(2 > 3, \"Yes\", BLANK()) => null"
+    },
+    "ERROR": {
+      "summary": "返回错误值。",
+      "example": "IF(2 > 3, \"Yes\", ERROR(\"Calculation\")) => \"#ERROR: Calculation\""
+    },
+    "IS_ERROR": {
+      "summary": "如果表达式导致错误，则返回真。",
+      "example": "IS_ERROR(ERROR()) => true"
+    },
+    "TODAY": {
+      "summary": "返回当前日期。",
+      "example": "TODAY() => \"2023-09-08 00:00\""
+    },
+    "NOW": {
+      "summary": "返回当前日期和时间。",
+      "example": "NOW() => \"2023-09-08 16:50\""
+    },
+    "YEAR": {
+      "summary": "返回日期时间的四位数年份。",
+      "example": "YEAR(\"2023-09-08\") => 2023"
+    },
+    "MONTH": {
+      "summary": "返回日期时间的月份，作为 1（一月）到 12（十二月）之间的数字。",
+      "example": "MONTH(\"2023-09-08\") => 9"
+    },
+    "WEEKNUM": {
+      "summary": "返回一年中的周数。",
+      "example": "WEEKNUM(\"2023-09-08\") => 36"
+    },
+    "WEEKDAY": {
+      "summary": "返回星期几，作为 0 到 6 之间的整数（包括 0 和 6）。你可以选择提供第二个参数（\"Sunday\" 或 \"Monday\"）来指定一周的开始日。如果省略，默认以周日开始。例如：\nWEEKDAY(TODAY(), \"Monday\")",
+      "example": "WEEKNUM(\"2023-09-08\") => 5"
+    },
+    "DAY": {
+      "summary": "返回日期时间的月份中的日期，形式为 1-31 之间的数字。",
+      "example": "DAY(\"2023-09-08\") => 8"
+    },
+    "HOUR": {
+      "summary": "返回日期时间的小时，作为 0（12:00am）到 23（11:00pm）之间的数字。",
+      "example": "HOUR(\"2023-09-08 16:50\") => 16"
+    },
+    "MINUTE": {
+      "summary": "返回日期时间的分钟，作为 0 到 59 之间的整数。",
+      "example": "MINUTE(\"2023-09-08 16:50\") => 50"
+    },
+    "SECOND": {
+      "summary": "返回日期时间的秒数，作为 0 到 59 之间的整数。",
+      "example": "SECOND(\"2023-09-08 16:50:30\") => 30"
+    },
+    "FROMNOW": {
+      "summary": "计算当前日期与另一个日期之间的天数差。",
+      "example": "FROMNOW({Date}, \"day\") => 25"
+    },
+    "TONOW": {
+      "summary": "计算当前日期与另一个日期之间的天数差。",
+      "example": "TONOW({Date}, \"day\") => 25"
+    },
+    "DATETIME_DIFF": {
+      "summary": "以指定的单位返回日期时间之间的差异。默认单位为秒。（单位说明符列表请点击此处。）\n日期时间之间的差异是通过从 [date1] 减去 [date2] 来确定的。这意味着如果 [date2] 晚于 [date1]，结果值将为负数。",
+      "example": "DATETIME_DIFF(\"2022-08-01\", \"2023-09-08\", \"day\") => 403"
+    },
+    "WORKDAY": {
+      "summary": "返回从起始日期开始的工作日，不包括指定的节假日",
+      "example": "WORKDAY(\"2023-09-08\", 200) => \"2024-06-14 00:00:00\"\nWORKDAY(\"2023-09-08\", 200, \"2024-01-22, 2024-01-23, 2024-01-24, 2024-01-25\") => \"2024-06-20 00:00:00\""
+    },
+    "WORKDAY_DIFF": {
+      "summary": "返回 date1 和 date2 之间的工作日数。工作日不包括周末和可选的节假日列表，格式为以逗号分隔的 ISO 格式日期字符串。",
+      "example": "WORKDAY_DIFF(\"2023-06-18\", \"2023-10-01\") => 75\nWORKDAY(\"2023-06-18\", \"2023-10-01\", \"2023-07-12, 2023-08-18, 2023-08-19\") => 73"
+    },
+    "IS_SAME": {
+      "summary": "比较两个日期直到指定的单位，并确定它们是否相同。如果是，则返回 true，否则返回 false。",
+      "example": "IS_SAME(\"2023-09-08\", \"2023-09-10\") => false\nIS_SAME(\"2023-09-08\", \"2023-09-10\", \"month\") => true"
+    },
+    "IS_AFTER": {
+      "summary": "确定 date1 是否晚于 date2。如果是，则返回 true，否则返回 false。",
+      "example": "IS_AFTER(\"2023-09-10\", \"2023-09-08\") => true\nIS_AFTER(\"2023-09-10\", \"2023-09-08\", \"month\") => false"
+    },
+    "IS_BEFORE": {
+      "summary": "确定 date1 是否早于 date2。如果是，则返回 true，否则返回 false。",
+      "example": "IS_BEFORE(\"2023-09-08\", \"2023-09-10\") => true\nIS_BEFORE(\"2023-09-08\", \"2023-09-10\", \"month\") => false"
+    },
+    "DATE_ADD": {
+      "summary": "向日期时间添加指定的 \"count\" 单位。",
+      "example": "DATE_ADD(\"2023-09-08 18:00:00\", 10, \"day\") => \"2023-09-18 18:00:00\""
+    },
+    "DATESTR": {
+      "summary": "将日期时间格式化为字符串（YYYY-MM-DD）。",
+      "example": "DATESTR(\"2023/09/08\") => \"2023-09-08\""
+    },
+    "TIMESTR": {
+      "summary": "将日期时间格式化为仅时间的字符串（HH:mm:ss）。",
+      "example": "DATESTR(\"2023/09/08 16:50:30\") => \"16:50:30\""
+    },
+    "DATETIME_FORMAT": {
+      "summary": "将日期时间格式化为指定的字符串。有关如何在日期字段中使用此函数的说明，请点击此处。有关支持的格式说明符列表，请点击此处。",
+      "example": "DATETIME_FORMAT(\"2023-09-08\", \"DD-MM-YYYY\") => \"08-09-2023\""
+    },
+    "DATETIME_PARSE": {
+      "summary": "将文本字符串解释为结构化日期，可选输入格式和区域设置参数。输出格式始终为 \"M/D/YYYY h:mm a\"。",
+      "example": "DATETIME_PARSE(\"8 Sep 2023 18:00\", \"D MMM YYYY HH:mm\") => \"2023-09-08 18:00:00\""
+    },
+    "CREATED_TIME": {
+      "summary": "返回当前记录的创建时间。",
+      "example": "CREATED_TIME() => \"2023-09-08 18:00:00\""
+    },
+    "LAST_MODIFIED_TIME": {
+      "summary": "返回用户在表格的非计算字段中进行的最近修改的日期和时间。",
+      "example": "LAST_MODIFIED_TIME() => \"2023-09-08 18:00:00\""
+    },
+    "COUNTALL": {
+      "summary": "返回包括文本和空白在内的所有元素的数量。",
+      "example": "COUNTALL(100, 200, \"\", \"Teable\", TRUE()) => 5"
+    },
+    "COUNTA": {
+      "summary": "返回非空值的数量。此函数同时计算数字和文本值。",
+      "example": "COUNTA(100, 200, 300, \"\", \"Teable\", TRUE) => 4"
+    },
+    "COUNT": {
+      "summary": "返回数字项的数量。",
+      "example": "COUNT(100, 200, 300, \"\", \"Teable\", TRUE) => 3"
+    },
+    "ARRAY_JOIN": {
+      "summary": "使用分隔符将汇总项数组连接成一个字符串。",
+      "example": "ARRAY_JOIN([\"Tom\", \"Jerry\", \"Mike\"], \"; \") => \"Tom; Jerry; Mike\""
+    },
+    "ARRAY_UNIQUE": {
+      "summary": "返回数组中的唯一项。",
+      "example": "ARRAY_UNIQUE([1, 2, 3, 2, 1]) => [1, 2, 3]"
+    },
+    "ARRAY_FLATTEN": {
+      "summary": "通过移除任何数组嵌套来扁平化数组。所有项目成为单个数组的元素。",
+      "example": "ARRAY_FLATTEN([1, 2, \" \", 3, true], [\"ABC\"]) => [1, 2, 3, \" \", true, \"ABC\"]"
+    },
+    "ARRAY_COMPACT": {
+      "summary": "从数组中移除空字符串和空值。保留 \"false\" 和包含一个或多个空白字符的字符串。",
+      "example": "ARRAY_COMPACT([1, 2, 3, \"\", null, \"ABC\"]) => [1, 2, 3, \"ABC\"]"
+    },
+    "TEXT_ALL": {
+      "summary": "返回所有字符串",
+      "example": "TEXT_ALL(\"t\") => t"
+    },
+    "RECORD_ID": {
+      "summary": "返回当前记录的 ID。",
+      "example": "RECORD_ID() => \"recxxxxxx\""
+    },
+    "AUTO_NUMBER": {
+      "summary": "为每条记录返回唯一的递增数字。",
+      "example": "AUTO_NUMBER() => 1"
+    },
+    "FORMULA": {
+      "summary": "填写变量、运算符和函数以形成计算公式。",
+      "example": "引用列：{字段名}\n\n使用运算符：100 * 2 + 300\n\n使用函数：SUM({数字字段 1}, 100)\n\n使用 IF 语句：\nIF(逻辑条件, \"值 1\", \"值 2\")"
+    }
+  },
+  "functionType": {
+    "fields": "字段",
+    "numeric": "数字",
+    "text": "文本",
+    "logical": "逻辑",
+    "date": "日期",
+    "array": "数组",
+    "system": "系统"
+  },
+  "statisticFunc": {
+    "none": "空",
+    "empty": "未填写",
+    "filled": "已填写",
+    "unique": "唯一值",
+    "max": "最大值",
+    "min": "最小值",
+    "sum": "求和",
+    "average": "平均值",
+    "checked": "已勾选",
+    "unChecked": "未勾选",
+    "percentEmpty": "未填写占比",
+    "percentFilled": "已填写占比",
+    "percentUnique": "唯一值占比",
+    "percentChecked": "已勾选占比",
+    "percentUnChecked": "未勾选占比",
+    "earliestDate": "最早日期",
+    "latestDate": "最晚日期",
+    "dateRangeOfDays": "时间范围 (日)",
+    "dateRangeOfMonths": "时间范围 (月)",
+    "totalAttachmentSize": "附件总大小"
+  },
+  "baseQuery": {
+    "add": "添加",
+    "error": {
+      "invalidCol": "无效的列，请重新选择",
+      "invalidCols": "无效的列：{{colNames}}",
+      "invalidTable": "无效的表格，请重新选择",
+      "requiredSelect": "必须选择一个"
+    },
+    "from": {
+      "title": "来源",
+      "fromTable": "选择表格",
+      "fromQuery": "从查询中"
+    },
+    "select": {
+      "title": "选择"
+    },
+    "where": {
+      "title": "筛选"
+    },
+    "groupBy": {
+      "title": "分组"
+    },
+    "orderBy": {
+      "title": "排序",
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "limit": {
+      "title": "跳过"
+    },
+    "offset": {
+      "title": "查询数量"
+    },
+    "join": {
+      "title": "连接",
+      "joinType": "连接类型",
+      "leftJoin": "左连接",
+      "rightJoin": "右连接",
+      "innerJoin": "内连接",
+      "fullJoin": "全连接",
+      "data": "数据来源"
+    },
+    "aggregation": {
+      "title": "聚合"
+    }
+  },
+  "comment": {
+    "title": "评论",
+    "placeholder": "添加评论...",
+    "emptyComment": "开始一段新评论...",
+    "deletedComment": "该评论已删除",
+    "imageSizeLimit": "文件大小不能超过{{size}}",
+    "tip": {
+      "editing": "正在编辑...",
+      "edited": "(已编辑)",
+      "onNotify": "关闭之后只会接受到与自己相关的评论通知",
+      "offNotify": "开启后，可以收到所有评论动态",
+      "reactionUserSuffix": "回复表情 {{emoji}}",
+      "me": "你",
+      "connection": "和"
+    },
+    "toolbar": {
+      "link": "链接",
+      "image": "图片"
+    },
+    "floatToolbar": {
+      "editLink": "编辑",
+      "caption": "设置标题",
+      "delete": "删除",
+      "linkText": "链接标题",
+      "enterUrl": "输入链接"
+    }
+  }
+}
