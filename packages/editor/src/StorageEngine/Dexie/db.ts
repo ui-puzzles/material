@@ -1,23 +1,24 @@
 import Dexie, { type EntityTable } from 'dexie';
 
-interface Friend {
+interface PageList {
   id: number;
+  pageId: string;
   name: string;
-  age: number;
+  content: Record<string, unknown>;
 }
 
-const db = new Dexie('FriendsDatabase') as Dexie & {
-  friends: EntityTable<
-    Friend,
+const db = new Dexie('ui_puzzles_editor') as Dexie & {
+  pages: EntityTable<
+    PageList,
     'id' // primary key "id" (for the typings only)
   >;
 };
 
 // Schema declaration:
 db.version(1).stores({
-  friends: '++id, name, age', // primary key "id" (for the runtime!)
+  pages: '++id, name, pageId', // primary key "id" (for the runtime!)
 });
 
-export type { Friend };
+export type { PageList };
 
 export { db };

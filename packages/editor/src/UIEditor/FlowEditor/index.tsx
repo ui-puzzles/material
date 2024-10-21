@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState } from 'react';
+import React, { useRef, useCallback, useState, useEffect } from 'react';
 import {
   ReactFlow,
   // addEdge,
@@ -17,7 +17,7 @@ import {
   ReactFlowInstance,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
-import { debounce } from 'lodash-es';
+import { debounce, isArray } from 'lodash-es';
 
 import { WidgetsPanel } from '../WidgetsPanel';
 import { useDnD } from '../DnDContext';
@@ -27,6 +27,10 @@ import { ControllersPanel } from '../ControllersPanel';
 import { Container, EditorContainer } from '../styles';
 import { CustomNode, WIDGET_MAP_NODES } from '../widgets';
 import { addWidgetViaWidgetType } from './addWidget';
+import { usePageSlice } from '@/store';
+import { db } from '@/StorageEngine/Dexie/db';
+import { useLiveQuery } from 'dexie-react-hooks';
+import type { FlowEditorProps } from '../interface';
 
 // const initialNodes = [
 //   {
@@ -39,7 +43,11 @@ import { addWidgetViaWidgetType } from './addWidget';
 
 const proOptions: ProOptions = { account: 'paid-pro', hideAttribution: true };
 
-export const FlowEditor = () => {
+export const FlowEditor: React.FC<FlowEditorProps> = ({ pageId }) => {
+  const { activePageId } = usePageSlice({
+    activePageId: pageId,
+  })();
+  console.log(activePageId);
   const reactFlowWrapper = useRef(null);
   const [nodes, setNodes] = useNodesState<CustomNode>([]);
   // const [edges, setEdges, onEdgesChange] = useEdgesState([]);
@@ -53,17 +61,23 @@ export const FlowEditor = () => {
   >(undefined);
   const [rfInstance, setRfInstance] =
     useState<ReactFlowInstance<CustomNode> | null>(null);
+  const pages = useLiveQuery(() => db.pages.toArray(), [pageId]);
 
   // const onConnect = useCallback(
   //   (params: Connection) => setEdges((eds) => addEdge(params, eds)),
   //   [],
   // );
 
-  const syncStatus = useCallback(() => {
+  const syncStatus = useCallback(async () => {
     if (rfInstance) {
       const flow = rfInstance.toObject();
+      const { nodes } = flow;
 
-      console.log(flow);
+      await db.pages.where('pageId').equals(pageId).modify({
+        content: {
+          nodes,
+        },
+      });
       // localStorage.setItem(flowKey, JSON.stringify(flow));
     }
   }, [rfInstance]);
@@ -161,6 +175,28 @@ export const FlowEditor = () => {
     },
     [setNodes, customApplyNodeChanges],
   );
+
+  const initApp = async () => {
+    try {
+      if (!isArray(pages)) return;
+      const isExistedPage = pages.some((page) => page.pageId === pageId);
+      if (!isExistedPage) {
+        const id = await db.pages.add({
+          pageId,
+          name: 'Page 1',
+          content: {},
+        });
+
+        console.log(id);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    initApp();
+  }, [pages]);
 
   return (
     <Container>
